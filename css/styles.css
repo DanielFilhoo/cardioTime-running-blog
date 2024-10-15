@@ -1,0 +1,188 @@
+/* Geral */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.4s;
+}
+
+a:hover {
+    color: #ff6f61;
+}
+
+/* Navbar */
+
+#navbar {
+    padding: 1.5rem 2.5rem;
+    background-color: #1e3d59;
+    color: #ffffff;
+}
+
+#navbar-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+#nav-links a {
+    color: #ffffff;
+}
+
+#nav-links a:hover {
+    color: #ff6f61;
+}
+
+/* Conteúdo principal */
+
+.container{
+    display: flex;
+    gap: 3rem;
+    padding: 2rem 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#posts-container{
+    flex: 3 1 0;
+}
+
+.post{
+    margin-bottom: 2.5rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.post img{
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.title,
+.description,
+.author{
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 2rem;
+    color: #1e3d59;
+}
+
+.description {
+    color: #555555;
+}
+
+.author{
+    color: #1e3d59;
+    font-weight: bold;
+}
+
+/* Barra lateral */
+
+#sidebar{
+    flex: 1 1 0;
+}
+
+#search-bar,
+#categories,
+#tag{
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+#search-bar h4,
+#categories h2,
+#tag h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    color: #1e3d59;
+}
+
+#search-bar form{
+    display: flex;
+}
+
+#search-bar input{
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#search-bar input[type="submit"] {
+    cursor: pointer;
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    margin-left: 0.5rem;
+    border-radius: 4px;
+}
+
+#categories li {
+    margin-bottom: 1rem;
+}
+
+#categories a {
+    color: #1e3d59;
+}
+
+#categories a:hover {
+    color: #ff6f61;
+}
+
+#tag-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#tag-container a{
+    background-color: #1e3d59;
+    color: #ffffff;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.3rem;
+}
+
+/* RODAPÉ */
+
+#footer {
+    border-top: 2px solid #ddd;
+    padding: 3rem;
+    text-align: center;
+    background-color: #1e3d59;
+    color: #ffffff;
+}
+
+#footer h2,
+#footer p {
+    margin-bottom: 1rem;
+}
+
+/* Responsividade */
+
+@media(max-width: 450px){
+    .container{
+        flex-wrap: wrap;
+    }
+}
